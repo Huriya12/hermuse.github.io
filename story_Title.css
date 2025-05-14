@@ -1,0 +1,35 @@
+.title {
+    background-color:#f0efed; /*Set Background Color*/
+    color:black; /*Set Font Color*/
+    font-size: 23px; /*Set Font Size*/
+    font-weight: 300; /*Set Font Weight*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    font-style: italic; /*Set Font Style*/
+    text-align: center; /*Centers Text*/
+    padding-top: 45px; /*Add Top Padding*/
+}
+
+.bold {
+    font-weight: bold; /*Set Font Weight*/
+}
+
+.subtext_1 {
+    background-color:#f0efed; /*Set Background Color*/
+    color:black; /*Set Font Color*/
+    font-weight: 300; /*Set Font Weight*/
+    font-size: 19px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+}
+
+.line {
+    text-align: center; /*Centers Text*/
+}
+
+.subtext_2 {
+    background-color:#f0efed; /*Set Background Color*/
+    color:rgb(86, 86, 86); /*Set Font Color*/
+    font-size: 16px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+}

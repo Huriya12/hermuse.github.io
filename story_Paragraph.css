@@ -1,0 +1,104 @@
+.body_text {
+    background-color:#f0efed; /*Set Background Color*/
+    color:black; /*Set Font Color*/
+    font-size: 18px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: justify; /*Justifies Text*/
+    line-height: 1.5; /*Add Spacing Between Lines*/
+    padding-left: 150px; /*Add Left Padding*/
+    padding-right: 150px; /*Add Right Padding*/
+    margin-top: 30px; /*Add Top Margin*/
+    margin-bottom: 40px; /*Add Bottom Margin*/
+}
+
+.belongings_1, .belongings_2 {
+    display: flex; /*Display Items Horizontally*/
+    justify-content: center; /*Align Items to Center*/
+    gap: 80px; /*Add Gap Between Images*/
+    padding: 0; /*Removes Padding*/
+}
+
+.belongings_1 {
+    margin-top: 50px; /*Add Top Margin*/
+}
+
+.belongings_2 {
+    margin-bottom: 40px; /*Add Bottom Margin*/
+}
+
+.belongings_1, .belongings_2 li {
+    display: flex; /*Display Items Horizontally*/
+    list-style: none; /*Removes List Style*/
+}
+
+.bee {
+    width: 90px; /*Set Image Width*/
+    height: 130px; /*Set Image Height*/
+}
+
+.sunflower {
+    width: 115px; /*Set Image Width*/
+    height: 150px; /*Set Image Height*/
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+    .belongings_1 li, .belongings_2 li {
+        display: none; /*Hides Images by Default*/
+    }
+
+    .belongings_1 li:nth-of-type(-n+5), .belongings_2 li:nth-of-type(-n+5) {
+        display: flex; /*Display 5 Images Only Horizontally*/
+    }
+
+    .belongings_1, .belongings_2 {
+        gap: 60px; /*Add Gap Between Images*/
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .belongings_1 li, .belongings_2 li {
+        display: none; /*Hides Images by Default*/
+    }
+
+    .belongings_1 li:nth-of-type(-n+4), .belongings_2 li:nth-of-type(-n+4) {
+        display: flex; /*Display 4 Images Only Horizontally*/
+    }
+
+    .belongings_1, .belongings_2 {
+        gap: 60px; /*Add Gap Between Images*/
+    }
+
+    .body_text {
+        padding-left: 100px; /*Add Left Padding*/
+        padding-right: 100px; /*Add Right Padding*/
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .body_text {
+        padding-left: 80px; /*Add Left Padding*/
+        padding-right: 80px; /*Add Right Padding*/
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .belongings_1 li, .belongings_2 li {
+        display: none; /*Hides Images by Default*/
+    }
+
+    .belongings_1 li:nth-of-type(-n+3), .belongings_2 li:nth-of-type(-n+3) {
+        display: flex; /*Display 3 Images Only Horizontally*/
+    }
+
+    .belongings_1, .belongings_2 {
+        gap: 60px; /*Add Gap Between Images*/
+    } 
+
+    .body_text {
+        padding-left: 40px; /*Add Left Padding*/
+        padding-right: 40px; /*Add Right Padding*/
+    }
+}

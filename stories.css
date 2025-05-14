@@ -1,0 +1,97 @@
+main h3 {
+    background-color:#f0efed; /*Set Background Color*/
+    color:black; /*Set Font Color*/
+    font-size: 23px; /*Set Font Size*/
+    font-weight: 300; /*Set Font Weight*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    padding-top: 45px; /*Add Top Padding*/
+}
+
+main p {
+    background-color:#f0efed; /*Set Background Color*/
+    color:black; /*Set Font Color*/
+    font-size: 18px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+}
+
+.story_list {
+    display: flex; /*Display Items Horizontally*/
+    column-count: 2; /*Split List Into 2 Columns*/
+    justify-content: center; /*Align Items to Center*/
+    gap: 100px; /*Add Gap Between List Items*/
+    margin-top: 50px; /*Add Top Margin*/
+    text-decoration: none; /*Removes Text Decoration*/
+}
+
+.story_list a {
+    text-decoration: none; /*Removes Text Decoration*/
+}
+
+.story_title {
+    background-color:#f0efed; /*Set Background Color*/
+    color: black; /*Set Font Color*/
+    font-size: 20px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    font-style: italic; /*Set Font Style*/
+    text-align: left; /*Align Text to the Left*/
+}
+
+.story_list a:hover {
+    color: black; /*Set Font Color*/
+    text-decoration: underline; /*Add Underline to Text*/
+    text-underline-offset: 5px; /*Add Gap Between Text and Underline*/
+}
+
+.bold {
+    font-weight: bold; /*Set Font Weight*/
+}
+
+.story_date {
+    background-color:#f0efed; /*Set Background Color*/
+    color: rgb(86, 86, 86); /*Set Font Color*/
+    font-size: 16px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: left; /*Align Text to the Left*/
+    text-decoration: none; /*Removes Text Decoration*/
+}
+
+.story_list li {
+    background-color:#f0efed; /*Set Background Color*/
+    color:black; /*Set Font Color*/
+    font-size: 17px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: left; /*Align Text to the Left*/
+    text-decoration: none; /*Removes Text Decoration*/
+    list-style: none; /*Removes List Decoration*/
+}
+
+.frame {
+   width: 400px; /*Set Image Width*/
+   height: 400px ; /*Set Image Height*/
+}
+
+@media screen and (max-width: 900px) {
+    .story_list {
+        flex-direction: column; /*Stack List Items Vertically*/
+        align-items: center; /*Align Items in Center*/
+        gap: 35px; /*Add Gap Between Items*/
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .story_list {
+        flex-direction: column; /*Stack List Items Vertically*/
+        align-items: center; /*Align Items in Center*/
+        gap: 35px; /*Add Gap Between Items*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .story_list {
+        flex-direction: column; /*Stack List Items Vertically*/
+        align-items: center; /*Align Items in Center*/
+        gap: 35px; /*Add Gap Between Items*/
+    }
+}

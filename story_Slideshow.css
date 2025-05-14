@@ -1,0 +1,87 @@
+* {box-sizing:border-box} /*Adds Padding and Border to the Element's Width & Height*/
+
+.slideshow_container {
+  position: relative; /*Ensure Relative Positioning*/
+  max-width: 1000px; /*Set Maximum Width for the Slideshow Container*/
+  margin: auto;  /*Centers Container Horizontally*/
+  margin-top: 50px; /*Adds Top Margin*/
+  margin-bottom: 100px; /*Adds Bottom Margin*/
+}
+
+.slide_page {
+  display: none;  /*Hides Slide Pages by Default*/
+}
+
+.next, .previous {
+  position: absolute; /*Ensure Precise Positioning*/
+  top: 50%; /*Move Content From Top*/
+  width: auto; /*Width Adjust Automatically Based on Content*/
+  color: black; /*Set Font Color*/
+  font-size: 18px; /*Set Font Size*/
+  font-family: 'Times New Roman'; /*Set Font Type*/
+  padding: 15px; /*Add Padding*/
+  cursor: pointer; /*Change Cursor Property to Pointer Value*/
+  user-select: none; /*Prevents User from Selecting the Text of the Element*/
+}
+
+.next {
+  right: 0;  /*Positions Button to the Right*/
+}
+
+.previous {
+  left: 0; /*Positions Button to the Left*/
+}
+
+.caption {
+  position: absolute; /*Ensure Precise Positioning*/
+  color: black; /*Set Font Color*/
+  font-size: 18px; /*Set Font Size*/
+  text-align: center; /*Centers Text*/
+  margin-top: 55px; /*Adds Top Margin*/
+  width: 100%; /*Takes Up Full Width*/
+}
+
+.dot_container {
+  position: absolute; /*Ensure Precise Positioning*/
+  text-align: center; /*Centers Text*/
+  width: 100%; /*Takes Up Full Width*/
+  margin-top: 10px; /*Adds Top Margin*/
+}
+
+.dot {
+  display: inline-block; /*Display Dot Next to Each Other in the Same Line*/
+  background-color: #f0efed; /*Set Background Color*/
+  height: 12px; /*Dot Height*/
+  width: 12px; /*Dot Width*/
+  border: 1.5px solid black; /*Set Border Thickness & Color*/
+  border-radius: 50%; /*Softens Border Edges*/
+  cursor: pointer; /*Change Cursor Property to Pointer Value*/
+  transition: background-color 0.6 ease; /*Smooth Transition When Background Color Changes When Hovered*/
+}
+
+.active, .dot:hover {
+  background-color: black; /*Set Background Color*/
+  border: 1.5px solid black; /*Set Border Thickness & Color*/
+}
+
+.fade { 
+  animation-name: fade; /*Uses 'Fade' Animation*/
+  animation-duration: 1.5s; /*'Fade' Animation Lasts for 1.5 Seconds*/
+}
+
+@keyframes fade {
+  from {opacity: .4} /*From Slightly Transparent*/
+  to {opacity: 1}  /*Too Fully Opaque*/
+}
+
+@media screen and (max-width: 700px) {
+  .caption {
+    font-size: 17px; /*Set Font Size*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .caption {
+    font-size: 16px; /*Set Font Size*/
+  }
+}

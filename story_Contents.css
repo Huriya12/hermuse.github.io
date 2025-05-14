@@ -1,0 +1,94 @@
+.bag {
+    width: 550px; /*Set Image Width*/
+    height: 500px; /*Set Image Height*/
+    transform: translateX(-30px); /*Adjusts Image Position*/
+}
+
+.phone {
+    width: 200px; /*Set Image Width*/
+    height: 300px; /*Set Image Height*/
+}
+
+.wallet {
+    width: 400px; /*Set Image Width*/
+    height: 300px; /*Set Image Height*/
+}
+
+.mentos {
+    width: 200px; /*Set Image Width*/
+    height: 250px; /*Set Image Height*/
+}
+
+.lip_products { 
+    width: 200px; /*Set Image Width*/
+    height: 300px; /*Set Image Height*/
+}
+
+.mirror {
+    width: 230px; /*Set Image Width*/
+    height: 230px; /*Set Image Height*/
+}
+
+@media screen and (max-width: 700px) {
+    .bag {
+        width: 350px; /*Set Image Width*/
+        height: 300px; /*Set Image Height*/
+    }
+
+    .phone {
+        width: 100px; /*Set Image Width*/
+        height: 200px; /*Set Image Height*/
+    }
+
+    .wallet {
+        width: 300px; /*Set Image Width*/
+        height: 200px; /*Set Image Height*/
+    }
+
+    .mentos {
+        width: 100px; /*Set Image Width*/
+        height: 150px; /*Set Image Height*/
+    }
+
+    .lip_products { 
+        width: 100px; /*Set Image Width*/
+        height: 200px; /*Set Image Height*/
+    }
+
+    .mirror {
+        width: 130px; /*Set Image Width*/
+        height: 130px; /*Set Image Height*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bag {
+        width: 350px; /*Set Image Width*/
+        height: 300px; /*Set Image Height*/
+    }
+
+    .phone {
+        width: 100px; /*Set Image Width*/
+        height: 200px; /*Set Image Height*/
+    }
+
+    .wallet {
+        width: 300px; /*Set Image Width*/
+        height: 200px; /*Set Image Height*/
+    }
+
+    .mentos {
+        width: 100px; /*Set Image Width*/
+        height: 150px; /*Set Image Height*/
+    }
+
+    .lip_products { 
+        width: 100px; /*Set Image Width*/
+        height: 200px; /*Set Image Height*/
+    }
+
+    .mirror {
+        width: 130px; /*Set Image Width*/
+        height: 130px; /*Set Image Height*/
+    }
+}

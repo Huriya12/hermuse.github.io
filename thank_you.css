@@ -1,0 +1,44 @@
+main h3 {
+    color:black; /*Set Font Color*/
+    font-size: 25px; /*Set Font Size*/
+    font-weight: 500; /*Set Font Weight*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    text-decoration: none; /*Removes Text Decoration*/
+    padding-top: 130px; /*Adds Top Padding*/
+}
+
+main p {
+    color:black; /*Set Font Color*/
+    font-size: 20px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    text-decoration: none; /*Removes Text Decoration*/
+}
+
+main button{
+    color:black; /*Set Font Color*/
+    font-size: 16px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    text-decoration: none; /*Removes Text Decoration*/
+    border: 1.5px solid black; /*Set Border Thickness & Color*/
+    padding: 8px 20px; /*Add Padding*/
+    cursor: pointer; /*Change Cursor Property to Pointer Value*/
+}
+
+main button:hover {
+    background-color: black; /*Set Background Color*/
+    color: #f0efed; /*Set Font Color*/
+    transform: scale(1.05); /*Enlarges Button*/
+}
+
+@media screen and (max-width: 600px) {
+    main h3 {
+        font-size: 24px; /*Set Font Size*/
+    }
+
+    main p {
+        font-size: 19px; /*Set Font Size*/
+    }
+}

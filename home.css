@@ -1,0 +1,60 @@
+main h3 {
+    color:black; color:black; /*Set Font Color*/
+    font-size: 23px; /*Set Font Size*/
+    font-weight: 500; /*Set Font Weight*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    text-decoration: none; /*Removes Text Decoration*/
+    padding-top: 45px; /*Add Top Padding*/
+}
+
+.button_Stories {
+    color:black; /*Set Font Color*/
+    font-size: 16px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    text-decoration: none; /*Removes Text Decoration*/
+    border: 1.5px solid black; /*Set Border Thickness & Color*/
+    padding: 8px 20px; /*Add Padding*/
+    margin-bottom: 15px; /*Add Bottom Margin*/
+    cursor: pointer; /*Change Cursor Property to Pointer Value*/
+}
+
+.button_Stories:hover {
+    background-color: black; /*Set Background Color*/
+    color: #f0efed; /*Set Font Color*/
+    transform: scale(1.05); /*Enlarges Button*/
+}
+
+.diary {
+    display: block; /*Display Image as Block*/
+    margin: 0 auto; /*Centers Container Horizontally Without Top or Bottom Margin*/
+    width: 700px;  /*Set Images Width*/
+    height: 280px; /*Set Images Height*/
+}
+
+@media screen and (max-width: 900px) {
+    .diary {
+        width: 600px; /*Set Images Width*/
+        height: 270px; /*Set Images Height*/
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .diary {
+        width: 500px; /*Set Images Width*/
+        height: 270px; /*Set Images Height*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main h3 {
+        font-size: 21px; /*Set Font Size*/
+        padding-top: 55px; /*Add Top Padding*/
+    }
+
+    .diary {
+        width: 400px; /*Set Images Width*/
+        height: 260px; /*Set Images Height*/
+    }
+}

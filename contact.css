@@ -1,0 +1,103 @@
+main h3 {
+    color:black; /*Set Font Color*/
+    font-size: 23px; /*Set Font Size*/
+    font-weight: 500; /*Set Font Weight*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    text-decoration: none; /*Removes Text Decoration*/
+    padding-top: 45px; /*Add Top Padding*/
+}
+
+main p {
+    color:black;  /*Set Font Color*/
+    font-size: 18px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    text-decoration: none; /*Removes Text Decoration*/
+    padding-top: 0; /*Removes Top Padding*/
+}
+
+.contact_form {
+    border: 1.5px solid black; /*Set Border Thickness & Color*/
+    width: 600px; /*Set Border Width*/
+    margin: 0 auto;  /*Centers Container Horizontally Without Top or Bottom Margin*/
+    margin-top: 40px; /*Add Top Margin*/
+    padding: 20px; /*Add Padding*/
+}
+
+.contact_form p {
+    color:black; /*Set Font Color*/
+    font-size: 18px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    font-weight: normal; /*Set Font Weight*/
+    text-align: left; /*Align Text to the Left*/
+    text-decoration: none; /*Removes Text Decoration*/
+}
+
+.contact_form input {
+    box-sizing: border-box; /*Adds Padding and Border to the Element's Width & Height*/
+    width: 100%; /*Set Input Width*/
+    height: 40px; /*Set Input Height*/
+    color:black; /*Set Font Color*/
+    font-size: 18px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: left; /*Align Text to the Left*/
+    text-decoration: none; /*Removes Text Decoration*/
+}
+
+.contact_form textarea {
+    box-sizing: border-box; /*Adds Padding and Border to the Element's Width & Height*/
+    width: 100%; /*Set Text Area Width*/
+    height: 100px;  /*Set Text Area Height*/
+    padding: 5px; /*Add Padding*/
+    color:black; /*Set Font Color*/
+    font-size: 18px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: left; /*Align Text to the Left*/
+    text-decoration: none; /*Removes Text Decoration*/
+    resize: none; /*Removes Resize Option*/
+}
+
+.contact_button {
+    color:black; /*Set Font Color*/
+    font-size: 18px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    text-decoration: none; /*Removes Text Decoration*/
+    border: 1.5px solid black; /*Set Border Thickness & Color*/
+    padding: 8px 20px; /*Add Padding*/
+    margin-top: 20px; /*Add Top Margin*/
+    margin-bottom: 40px; /*Add Bottom Margin*/
+    cursor: pointer; /*Change Cursor Property to Pointer Value*/
+}
+
+.contact_button:hover {
+    background-color: black; /*Set Background Color*/
+    color: #f0efed; /*Set Font Color*/
+    transform: scale(1.05); /*Enlarges Button*/
+}
+
+@media screen and (max-width: 900px) {
+    .contact_form {
+        width: 80%; /*Set Border Width*/
+        padding: 10px; /*Add Padding*/
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contact_form {
+        width: 80%; /*Set Border Width*/
+        padding: 10px; /*Add Padding*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main p {
+        font-size: 17px; /*Set Font Size*/
+    }
+
+    .contact_form {
+        width: 80%; /*Set Border Width*/
+        padding: 10px; /*Add Padding*/
+    }
+}

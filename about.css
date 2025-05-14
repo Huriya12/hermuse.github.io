@@ -1,0 +1,64 @@
+main h2 {
+    background-color:#f0efed; /*Set Background Color*/
+    color:black; /*Set Font Color*/
+    font-size: 23px; /*Set Font Size*/
+    font-weight: 300; /*Set Font Weight*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    padding-top: 45px; /*Add Top Padding*/
+}
+
+main p {
+    background-color:#f0efed; /*Set Background Color*/
+    color:black; /*Set Font Color*/
+    font-size: 18px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: justify; /*Justifies Text*/
+    line-height: 1.5; /*Add Spacing Between Lines*/
+    margin-bottom: 30px; /*Add Bottom Margin*/
+    padding-left: 150px; /*Add Left Padding*/
+    padding-right: 150px; /*Add Right Padding*/
+}
+
+main img {
+    width: 600px; /*Set Image Width*/
+    height: 200px; /*Set Image Height*/
+    margin-top: 5px; /*Add Top  Margin*/
+    margin-bottom: 35px; /*Add Bottom Margin*/
+}
+
+@media screen and (max-width: 900px) {
+    main p {
+        padding-left: 100px; /*Add Left Padding*/
+        padding-right: 100px; /*Add Right Padding*/
+    }
+
+    main img {
+        width: 500px; /*Set Image Width*/
+        height: 150px; /*Set Image Height*/
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main p {
+        padding-left: 80px; /*Add Left Padding*/
+        padding-right: 80px; /*Add Right Padding*/
+    }
+
+    main img {
+        width: 440px; /*Set Image Width*/
+        height: 140px; /*Set Image Height*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main p {
+        padding-left: 40px; /*Add Left Padding*/
+        padding-right: 40px; /*Add Right Padding*/
+    }
+
+    main img {
+        width: 330px; /*Set Image Width*/
+        height: 110px; /*Set Image Height*/
+    }
+}

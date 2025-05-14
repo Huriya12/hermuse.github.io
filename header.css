@@ -1,0 +1,37 @@
+body {
+    margin: 0; /*Removes Margin*/
+    padding: 0; /*Removes Padding*/
+}
+
+header img {
+    width: 250px; /*Set Image Width*/
+    height: 75px; /*Set Image Height*/
+}
+
+nav {
+    overflow: hidden; /*Hides Overflow Content*/
+    display: flex; /*Display Items Horizontally*/
+    justify-content: center; /*Align Items to Center*/
+    border-top: 1px solid black; /*Set Border Thickness & Color*/
+    border-bottom: 1px solid black; /*Set Border Thickness & Color*/
+    border-width: 100%; /*Set Border Width*/
+    padding: 10px 25px; /*Add Padding Between Borders and Text*/
+    gap: 40px; /*Add Gap Between Text*/
+    z-index: 1000; /*Keep Navigation Bar's Items on Top*/
+}
+
+nav a {
+    background-color:#f0efed; /*Set Background Color*/
+    color:black; /*Set Font Color*/
+    font-size: 18px; /*Set Font Size*/
+    font-family: 'Times New Roman'; /*Set Font Type*/
+    text-align: center; /*Centers Text*/
+    text-decoration: none; /*Removes Text Decoration*/
+    display: flex; /*Display Items Horizontally*/
+}
+
+nav a:hover {
+    color: black; /*Set Font Color*/
+    text-decoration: underline; /*Add Underline to Text*/
+    text-underline-offset: 5px; /*Add Gap Between Text and Underline*/
+}

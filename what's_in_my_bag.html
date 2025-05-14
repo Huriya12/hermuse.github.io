@@ -1,0 +1,157 @@
+<!DOCTYPE html> <!--Update Document Type to HTML's Latest Version-->
+<html>
+    <title>Her Muse: What's In My Bag</title> <!--Webpage Title-->
+    <head>
+        <!--Ensure Page Design is Responsive to User's Screen Device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Links to External CSS Files for Designing the Website-->
+        <link rel="stylesheet" href="header.css" type="text/css">
+        <link rel="stylesheet" href="story_Title.css" type="text/css">
+        <link rel="stylesheet" href="story_Slideshow.css" type="text/css">
+        <link rel="stylesheet" href="story_Contents.css" type="text/css">
+
+    </head>
+    <body bgcolor="#f0efed">
+
+        <!--Header Section-->
+        <header>
+
+        <!--Image for Website Logo-->
+        <center><img src="logo.jpg"></center>
+
+        <!--Navigation Bar Section-->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="stories.html">Stories</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        </header>
+        
+        <!--Main Contents Section-->
+        <main>
+
+            <!--Heading 2 for Current Page's Main Title-->
+            <h2 class="title">
+                <span class="bold">her style: </span> what's in my bag</h2>
+
+            <!--Heading 3 for Current Page's Description-->
+            <h3 class="subtext_1">going out edition</h3>
+
+            <!--Paragraph for Current Page's Line-->
+            <p class="line">────────────────────────────────────────</p>
+
+            <!--Paragraph for Current Page's Date-->
+            <p class="subtext_2">14 May 2025</p>
+            
+            <!--Class Container for Slideshow-->
+            <div class="slideshow_container">
+
+                <div class="slide_page">
+                    <!--Current Slide Page Image-->
+                    <center><img src="chloe_bag.png" class="bag"></center>
+                    <!--Current Slide Page Caption-->
+                    <div class="caption">the bag in question.</div>
+                </div>
+
+                <div class="slide_page">
+                    <!--Current Slide Page Image-->
+                    <center><img src="phone.png" class="phone"></center>
+                    <!--Current Slide Page Caption-->
+                    <div class="caption">a phone. its case may be chipped and cracked, but it's well-loved.</div>
+                </div>
+
+                <div class="slide_page">
+                    <!--Current Slide Page Image-->
+                    <center><img src="wallet.png" class="wallet"></center>
+                    <!--Current Slide Page Caption-->
+                    <div class="caption">an old pencil case turned wallet, now carrying a bit of cash and a few essentials.</div>
+                </div>
+
+                <div class="slide_page">
+                    <!--Current Slide Page Image-->
+                    <center><img src="mentos.png" class="mentos"></center>
+                    <!--Current Slide Page Caption-->
+                    <div class="caption">chewing gum always on the bag, just in case... it is an essential, actually. </div>
+                </div>
+
+                <div class="slide_page">
+                    <!--Current Slide Page Image-->
+                    <center><img src="lip_products.png" class="lip_products"></center>
+                    <!--Current Slide Page Caption-->
+                    <div class="caption">lip products because the girl needs her lip balm and lip tint at all times.</div>
+                </div>
+
+                <div class="slide_page">
+                    <!--Current Slide Page Image-->
+                    <center><img src="mirror.png" class="mirror"></center>
+                    <!--Current Slide Page Caption-->
+                    <div class="caption">mirror, mirror on the wall (more like in my bag, really).</div>
+                </div>
+
+                <!--Clickable Button to Direct User to Next Slide Page-->
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!--Clickable Button to Direct User to Previous Slide Page-->
+                <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+
+                <!--Class Container for Dots-->
+                <div class="dot_container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+
+            <!--Javascript Function to Enable Slideshow-->
+            <script>
+                //Initialize Slide Index to Start at Slide Page No. 1
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                //Function to Move to the Next or to the Previous Slide Page
+                function plusSlides(n) {
+                    showSlides (slideIndex += n);
+                }
+
+                //Function to Move to a Specific Slide Page
+                function currentSlide(n) {
+                    showSlides (slideIndex = n);
+                }
+
+                //Function to Display Correct Slide Page
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName('slide_page'); //All SLide Pages
+                    let dot = document.getElementsByClassName('dot'); //All Dot Indicators
+
+                    //Move to Slide Page No.1 If N is Too Low
+                    if ( n > slides.length) {slideIndex = 1}
+
+                    //Move to Slide Page No.6 If N is Too High
+                    if (n < 1) {slideIndex = slides.length}
+
+                    //Hide All Slide Pages
+                    for (i = 0; i < dot.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+
+                    //Remove 'Active' Class From All Dots
+                    for ( i = 0; i < dot.length; i++) {
+                        dot[i].className = dot[i].className.replace(" active", "");
+                    }
+
+                    //Display Current Slide Page
+                    slides[slideIndex - 1].style.display = "block";
+
+                    //Display Current Dot Corresponding to Current Slide Page
+                    dot[slideIndex - 1].className += " active";
+                }
+            </script>
+        </main>
+    </body>
+</html>
